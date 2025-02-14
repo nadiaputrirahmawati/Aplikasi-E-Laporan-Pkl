@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .clip-trapezoid {
+        clip-path: polygon(0% 0%, 80% 2%, 100% 100%, 0% 100%);
+    }
+}
+
+/* --------- curve outside (Light Mode) ---------- */
+.navigation ul li:hover a::before,
+.navigation ul li.active a::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px white;
+    pointer-events: none;
+}
+
+.navigation ul li:hover a::after,
+.navigation ul li.active a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px white;
+    pointer-events: none;
+}
+
+.navigation ul li:hover,
+.navigation ul li.active {
+    background-color: white;
+    border-top-left-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+    margin-top: 12px;
+}
+
+.navigation ul li:hover a,
+.navigation ul li.active a {
+    color: #fd5530
+}
+
+/* --------- DARK MODE ---------- */
+[data-theme="pkl_dark"] .navigation ul li:hover a::before,
+[data-theme="pkl_dark"] .navigation ul li.active a::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px rgb(30, 42, 52);
+    pointer-events: none;
+}
+
+[data-theme="pkl_dark"] .navigation ul li:hover a::after,
+[data-theme="pkl_dark"] .navigation ul li.active a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px rgb(30, 42, 53);
+    pointer-events: none;
+}
+
+[data-theme="pkl_dark"] .navigation ul li:hover,
+[data-theme="pkl_dark"] .navigation ul li.active {
+    background-color: rgb(30, 42, 52);
+    border-top-left-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+    margin-top: 12px;
+}
+
+[data-theme="pkl_dark"] .navigation ul li:hover a,
+[data-theme="pkl_dark"] .navigation ul li.active a {
+    color: #aeadab;
+}
