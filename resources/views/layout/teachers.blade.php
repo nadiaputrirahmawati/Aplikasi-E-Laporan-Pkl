@@ -23,13 +23,13 @@
 
 <body class="bg-base-100">
     <div class="flex min-h-screen">
-        @include('guru.partials.Sidebar')
+        @include('partials.Sidebar_teachers')
         <!-- Sidebar -->
 
 
         <!-- Main Content Area -->
         <div id="main-content" class="flex-1 lg:ml-64 ml-0 lg:w-auto lg:mb-0 mb-24 w-full transition-all">
-            @include('guru.partials.Navbar')
+            @include('partials.Navbar_teachers')
             <div class="mt-16 p-6">
 
                 @yield('content')

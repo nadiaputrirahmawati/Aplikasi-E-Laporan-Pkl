@@ -1,4 +1,4 @@
-@extends('layout.guru', ['title' => 'Detail Siswa', 'url' => '/guru/laporan'])
+@extends('layout.teachers', ['title' => 'Detail Siswa', 'url' => '/guru/laporan'])
 
 @section('content')
     {{-- <div class="mt-5"> --}}
@@ -127,5 +127,5 @@
         </div>
 
     </div>
-    @include('guru.modal_detail_siswa')
+    @include('teachers.modal_detail_siswa')
 @endsection

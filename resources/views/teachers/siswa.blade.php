@@ -1,4 +1,4 @@
-@extends('layout.guru', ['title' => 'Daftar Siswa'])
+@extends('layout.teachers', ['title' => 'Daftar Siswa'])
 
 @section('content')
 <div class="bg-base-300 shadow-lg rounded-3xl p-4 text-neutral mt-5">

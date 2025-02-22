@@ -1,4 +1,4 @@
-@extends('layout.guru', ['title' => 'Profile Guru'])
+@extends('layout.teachers', ['title' => 'Profile Guru'])
 
 
 @section('content')

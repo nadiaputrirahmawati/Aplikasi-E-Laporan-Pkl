@@ -1,4 +1,4 @@
-@extends('layout.guru', ['title' => 'Kelas'])
+@extends('layout.teachers', ['title' => 'Kelas'])
 @section('content')
     <div class="mt-5">
         <h1 class=" bg-primary py-2 ml-6 px-4 w-40 text-center text-white rounded-full font-semibold text-lg"> Tambah Kelas</h1>

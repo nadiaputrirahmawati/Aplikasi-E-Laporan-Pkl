@@ -1,4 +1,4 @@
-@extends('layout.guru', ['title' => 'Daftar Laporan'])
+@extends('layout.teachers', ['title' => 'Daftar Laporan'])
 @section('content')
     <div class="w-full">
         <div class="flex lg:flex-row flex-col justify-between lg:space-x-4 space-x-0 mt-5">

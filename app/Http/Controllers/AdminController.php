@@ -12,7 +12,7 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('guru.dashboard');
+        return view('teachers.dashboard');
     }
 
     /**
@@ -64,28 +64,28 @@ class AdminController extends Controller
     }
 
     public function kelas(){
-        return view('guru.index');
+        return view('teachers.class.index');
     }
     public function siswa(){
-        return view('guru.siswa');
+        return view('teachers.siswa');
     }
     public function detailsiswa(){
-        return view('guru.detailsiswa');
+        return view('teachers.detailsiswa');
     }
     public function judul_laporan(){
-        return view('guru.title_report');
+        return view('teachers.title_report');
     }
     public function profile(){
-        return view('guru.profile');
+        return view('teachers.profile');
     }
     public function report(){
-        return view('guru.report');
+        return view('teachers.report');
     }
     public function detailreport(){
-        return view('guru.detail_report');
+        return view('teachers.detail_report');
     }
     public function logbook(){
-        return view('guru.logbook');
+        return view('teachers.logbook');
     }
 
 
