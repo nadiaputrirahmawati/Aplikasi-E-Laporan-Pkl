@@ -14,9 +14,9 @@
                                 <img src="{{ asset('img/1.png') }}" alt="Profile Picture" class="w-28 rounded-full object-cover">
                             
                                 <!-- Tombol Edit Profile -->
-                                <button class="absolute bottom-0 right-0 mb-2 mr-2 w-8 h-8 bg-base-200 text-white p-1 rounded-full shadow-md hover:bg-base-100 hover:text-neutral">
+                                <a href="{{ url('/teacher/profile/update') }}" class="absolute bottom-0 right-0 mb-2 mr-2 w-8 h-8 bg-base-200 text-white px-2 py-1 rounded-full shadow-md hover:bg-base-100 hover:text-neutral">
                                     <i class="fa-light fa-pen "></i>
-                                </button>
+                                </a>
                             </div>
                         </div>
                         
@@ -30,7 +30,7 @@
                             <h1 class="font-medium text-sm text-neutral"> <i class="fa-solid fa-circle text-[7px] text-green-600 mr-2"></i> <span>Active</span> </h1>
                         </div>
                     </div>
-                    <button class="text-md text-white font-medium h-12 lg:mt-14 mt-4 shadow-md py-1 px-8 rounded-xl bg-base-200"> Edit Profile</button>
+                    <a href="{{ url('/teacher/profile/update') }}" class="text-md text-white font-medium h-10 lg:mt-14 mt-4 shadow-md py-2 px-8 rounded-xl bg-base-200"> Edit Profile</a>
                 </div>
                 <h1 class="text-neutral text-md font-medium mt-3"> <i class="fa-light fa-circle-user mr-2"></i>My Profile</h1>
             </div>

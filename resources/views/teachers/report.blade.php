@@ -29,7 +29,7 @@
                             Operasional di PT ABC </h1>
                     </div>
                 </div>
-                <a href="/guru/siswa/detail" class="flex justify-center w-2/12">
+                <a href={{ url('teacher/students/detail') }} class="flex justify-center w-2/12">
                     <div class="flex lg:flex-row flex-col h-6 mt-3 px-5 rounded-full  lg:space-x-5  bg-primary space-x-0">
                         <h1 class=" font-normal text-white">Detail </h1>
                     </div>

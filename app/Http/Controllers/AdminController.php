@@ -87,6 +87,9 @@ class AdminController extends Controller
     public function logbook(){
         return view('teachers.logbook');
     }
+    public function profile_update(){
+        return view('teachers.update_profile');
+    }
 
 
 }

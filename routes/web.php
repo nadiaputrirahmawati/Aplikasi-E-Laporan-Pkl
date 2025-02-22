@@ -16,6 +16,7 @@ Route::prefix('teacher')->group(function () {
     Route::get('report', [AdminController::class, 'report']);
     Route::get('report/detail', [AdminController::class, 'detailreport']);
     Route::get('profile', [AdminController::class, 'profile']);
+    Route::get('profile/update', [AdminController::class, 'profile_update']);
 });
 Route::post('/project/upload', [AdminController::class, 'detailreport'])->name('project.upload');
 

@@ -53,7 +53,7 @@
         </div>
         <hr class="my-3">
         <div class="space-y-2">
-            <a href="/guru/profile" class="flex items-center space-x-2 ">
+            <a href="/teacher/profile" class="flex items-center space-x-2 ">
                 <span class="text-primary py-1 px-2 bg-orange-50 rounded-lg"><i
                         class="fa-light fa-id-card-clip text-xl"></i></span>
                 <div class="flex flex-col ">
