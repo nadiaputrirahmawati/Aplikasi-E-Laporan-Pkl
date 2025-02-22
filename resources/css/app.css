@@ -8,6 +8,9 @@
     }
 }
 
+.table tr {
+    border-color: #b9b9b9; /* Warna abu-abu (gray-300 di Tailwind) */
+}
 /* --------- curve outside (Light Mode) ---------- */
 .navigation ul li:hover a::before,
 .navigation ul li.active a::before {
@@ -19,7 +22,7 @@
     height: 50px;
     background-color: transparent;
     border-radius: 50%;
-    box-shadow: 35px 35px 0 10px white;
+    box-shadow: 35px 35px 0 10px rgb(220, 225, 229);
     pointer-events: none;
 }
 
@@ -33,13 +36,23 @@
     height: 50px;
     background-color: transparent;
     border-radius: 50%;
-    box-shadow: 35px -35px 0 10px white;
+    box-shadow: 35px -35px 0 10px rgb(220, 225, 229);
     pointer-events: none;
+}
+
+/* Efek hover menambahkan shadow */
+.navigation ul li:hover {
+    box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Hilangkan shadow dari item yang active */
+.navigation ul li.active {
+    box-shadow: none;
 }
 
 .navigation ul li:hover,
 .navigation ul li.active {
-    background-color: white;
+    background-color: rgb(220, 225, 229);
     border-top-left-radius: 4rem;
     border-bottom-left-radius: 4rem;
     margin-top: 12px;
@@ -61,7 +74,7 @@
     height: 50px;
     background-color: transparent;
     border-radius: 50%;
-    box-shadow: 35px 35px 0 10px rgb(30, 42, 52);
+    box-shadow: 35px 35px 0 10px #142439;
     pointer-events: none;
 }
 
@@ -75,13 +88,13 @@
     height: 50px;
     background-color: transparent;
     border-radius: 50%;
-    box-shadow: 35px -35px 0 10px rgb(30, 42, 53);
+    box-shadow: 35px -35px 0 10px #142439;
     pointer-events: none;
 }
 
 [data-theme="pkl_dark"] .navigation ul li:hover,
 [data-theme="pkl_dark"] .navigation ul li.active {
-    background-color: rgb(30, 42, 52);
+    background-color: #142439;
     border-top-left-radius: 4rem;
     border-bottom-left-radius: 4rem;
     margin-top: 12px;

@@ -12,7 +12,7 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('pages.index');
+        return view('guru.dashboard');
     }
 
     /**
@@ -66,4 +66,27 @@ class AdminController extends Controller
     public function kelas(){
         return view('guru.index');
     }
+    public function siswa(){
+        return view('guru.siswa');
+    }
+    public function detailsiswa(){
+        return view('guru.detailsiswa');
+    }
+    public function judul_laporan(){
+        return view('guru.title_report');
+    }
+    public function profile(){
+        return view('guru.profile');
+    }
+    public function report(){
+        return view('guru.report');
+    }
+    public function detailreport(){
+        return view('guru.detail_report');
+    }
+    public function logbook(){
+        return view('guru.logbook');
+    }
+
+
 }

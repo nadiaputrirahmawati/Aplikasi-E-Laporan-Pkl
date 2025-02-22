@@ -24,23 +24,22 @@ export default {
                 pkl: { 
                     "primary": "#fd5530",  // warna sidebar (orange)
                     "secondary": "#f97316", // warna gradasi
-                    "accent": "#37cdbe",
-                    "neutral": "#3d4451",
-                    "base-100": "#ffff",
-                    "color": "#0000",
-                    "base-content": "#f8fafc"
+                    "neutral": "#3d4451", // warna text (dark/hitam) 
+                    "base-100": "#f1f5f9", // warna putih
+                    "base-200": "#fd5530", // warna orange
+                    "base-300": "#ffff", // warna putih
+                    "base-content": "#ffff" // warna putih
                 },
                 pkl_dark: {
-                    "primary": "#394552",
-                    "secondary": "#323c47",
-                    "accent": "#37cdbe",
-                    "neutral": "#FCFCFC",
-                    "base-100": "#272f38",
-                    "color": "#ffff",
-                    "base-content": "#748496"
+                    "primary": "#111d2d", // warna biru dark
+                    "secondary": "#132133", // warna biru dark gradasi
+                    "neutral": "#FCFCFC", // warna text (putih)
+                    "base-100": "#17293f", //warna biru agak muda (content)
+                    "base-200": "#2f3f4c", // warna abu abu tua
+                    "base-300": "#2f3f4c", // warna abu abu tua
+                    "base-content": "#111d2d" // warna biru dark biru
                   },
             },
-            // "dark", // Pakai tema dark bawaan DaisyUI
         ],
     },
 };
